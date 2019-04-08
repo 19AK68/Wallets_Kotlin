@@ -1,5 +1,7 @@
 package com.ak.wallets.activities
 
+import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +18,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
     private val database = FirebaseDatabase.getInstance()
     private val table_user = database.getReference("User")
     private lateinit var user: User
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +45,10 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
                     if (user.Password == edtPassword.text.toString()) {
 
                         toast("Sign is successfully!")
+                       val intent = Intent(this@SignInActivity,WalletsActivity::class.java)
+                        startActivity(intent)
+
+                            //Intent(this, WalletsActivity::class.java))
 
 
                     } else {
