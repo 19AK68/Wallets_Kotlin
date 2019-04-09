@@ -4,152 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".activities.WalletsActivity">
+    tools:context=".activities.WalletsActivity" >
 
-    <RelativeLayout
-        android:id="@+id/rl1"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="50dp"
-        android:gravity="center">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="false"
-            android:src="@drawable/fon1" />
-
-        <TextView
-            android:id="@+id/tv_bank_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="8dp"
-            android:text="BANK NAME"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/ivChip"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/chip"
-            android:layout_below="@+id/tv_bank_name"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="12dp"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_card_code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ivChip"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="4dp"
-            android:text="@string/code"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_card_holder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="16dp"
-            android:text="CARDHOLDER"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:id="@+id/ll1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:layout_toEndOf="@+id/tv_card_holder"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/card_month"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="06"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/mm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MM"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/div"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="16dp"
-            android:layout_toEndOf="@+id/ll1"
-            android:text="/"
-            android:textColor="@color/white" />
-        <LinearLayout
-            android:id="@+id/ll2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="16dp"
-            android:layout_toEndOf="@+id/div"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/card_year"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="21"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/yy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="YY"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll3"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:layout_toEndOf="@id/ll2"
-            android:layout_marginBottom="16dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            >
-            <ImageView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/visa2"
-                />
-
-        </LinearLayout>
+    </android.support.v4.view.ViewPager>
 
 
-    </RelativeLayout>
 
 </RelativeLayout>
 
