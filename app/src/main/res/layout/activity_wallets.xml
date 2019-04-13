@@ -42,24 +42,70 @@
             android:layout_marginTop="12dp"
 
             />
-
-        <TextView
-            android:id="@+id/tv_card_code"
+        <LinearLayout
+            android:id="@+id/ll_card_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ivChip"
+            android:orientation="horizontal"
+            android:layout_below="@id/ivChip"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/tv_card_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/code"
+            android:paddingRight="16dp"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
+
+            >
+            <TextView
+                android:id="@+id/tv_card_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            >
+            <TextView
+                android:id="@+id/tv_card_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            >
+            <TextView
+                android:id="@+id/tv_card_number4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            >
+
+
+        </LinearLayout>
+
+
 
         <TextView
             android:id="@+id/tv_card_holder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
+            android:layout_below="@+id/ll_card_number"
             android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
             android:text="CARDHOLDER"
@@ -71,7 +117,7 @@
             android:id="@+id/ll1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
+            android:layout_below="@+id/ll_card_number"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:layout_toEndOf="@+id/tv_card_holder"
@@ -98,7 +144,7 @@
             android:id="@+id/div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
+            android:layout_below="@+id/ll_card_number"
             android:layout_marginStart="5dp"
             android:layout_marginTop="16dp"
             android:layout_toEndOf="@+id/ll1"
@@ -108,7 +154,7 @@
             android:id="@+id/ll2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_card_code"
+            android:layout_below="@+id/ll_card_number"
             android:layout_marginStart="5dp"
             android:layout_marginTop="16dp"
             android:layout_toEndOf="@+id/div"
