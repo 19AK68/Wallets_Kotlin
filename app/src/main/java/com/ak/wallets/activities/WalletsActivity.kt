@@ -11,6 +11,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import kotlinx.android.synthetic.main.activity_wallets.*
 import org.jetbrains.anko.toast
 
 class WalletsActivity : AppCompatActivity() {
@@ -48,6 +49,7 @@ class WalletsActivity : AppCompatActivity() {
                 if(dataSnapshot.child("01").exists()){
                     cards = dataSnapshot.child("01").getValue(Cards::class.java)!!
                     Log.d(TAG, " Card in base")
+                    tv_bank_name.text = cards.Bank_name
 
                 } else{
                     toast("Cards not exist in Database")
